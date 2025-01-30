@@ -1,0 +1,6 @@
+@MyLocalAPI_HostAddress = http://localhost:5204
+
+GET {{MyLocalAPI_HostAddress}}/api/fooditems
+Accept: application/json
+
+###
