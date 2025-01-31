@@ -31,3 +31,4 @@ C:\cs12dotnet8\experiments\MyLocalAPI\obj\Debug\net9.0\refint\MyLocalAPI.dll
 C:\cs12dotnet8\experiments\MyLocalAPI\obj\Debug\net9.0\MyLocalAPI.pdb
 C:\cs12dotnet8\experiments\MyLocalAPI\obj\Debug\net9.0\MyLocalAPI.genruntimeconfig.cache
 C:\cs12dotnet8\experiments\MyLocalAPI\obj\Debug\net9.0\ref\MyLocalAPI.dll
+C:\cs12dotnet8\experiments\MyLocalAPI\obj\Debug\net9.0\MyLocalAPI.sourcelink.json

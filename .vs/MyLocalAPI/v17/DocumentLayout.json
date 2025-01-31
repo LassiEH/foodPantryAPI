@@ -26,7 +26,7 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 266,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Controllers\\FoodItemController.cs",
               "ToolTip": "C:\\cs12dotnet8\\experiments\\MyLocalAPI\\Controllers\\FoodItemController.cs",
               "RelativeToolTip": "Controllers\\FoodItemController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T18:13:40.423Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "MyLocalAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-26T18:11:46.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:11:46.222Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "MyLocalAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-26T18:11:02.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:11:02.154Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T18:10:48.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:10:48.889Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Models\\FoodItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T18:10:37.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:10:37.16Z"
             }
           ]
         }

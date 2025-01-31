@@ -40,6 +40,21 @@ public class FoodItemsController : ControllerBase
         return NoContent();
     }
 
+    [HttpPatch("{id}/reduce")]
+    public IActionResult ReduceQuantity(int id, [FromQuery] int amount)
+    {
+        var item = PantryItems.FirstOrDefault(i => i.Id == id);
+        if (item == null) return NotFound();
+
+        if (item.Quantity < amount)
+        {
+            return BadRequest(new { Message = "Ei tarpeeksi tuotetta" });
+        }
+
+        item.Quantity -= amount;
+        return Ok(new { Message = "Määrä muutettu" });
+    }
+
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
