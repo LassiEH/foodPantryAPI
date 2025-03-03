@@ -1,49 +1,51 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
 public class FoodItemsController : ControllerBase
 {
-    private static List<FoodItem> PantryItems = new List<FoodItem>
+    private readonly DatabaseContext _context;
+    public FoodItemsController(DatabaseContext context)
     {
-        new FoodItem { Id = 1, FoodItemName = "Jauho", Quantity = 1 },
-        new FoodItem { Id = 2, FoodItemName = "Leivinjauhe", Quantity = 1 }
-    };
+        _context = context;
+    }
 
     [HttpGet]
-    public IEnumerable<FoodItem> Get() => PantryItems;
+    public IActionResult GetItems() => Ok(_context.FoodItems.ToList());
 
     [HttpGet("{id}")]
     public ActionResult<FoodItem> Get(int id)
     {
-        var product = PantryItems.Find(p => p.Id == id);
+        var product = _context.FoodItems.Find(id);
         if (product == null) return NotFound();
-        return product;
+        return Ok(product);
     }
 
     [HttpPost]
-    public ActionResult<FoodItem> Post(FoodItem fooditem)
+    public IActionResult AddItem([FromBody] FoodItem item)
     {
-        fooditem.Id = PantryItems.Count + 1;
-        PantryItems.Add(fooditem);
-        return CreatedAtAction(nameof(Get), new { id = fooditem.Id }, fooditem);
+        _context.FoodItems.Add(item);
+        _context.SaveChanges();
+        return CreatedAtAction(nameof(GetItems), new { id = item.Id }, item);
     }
 
     [HttpPut("{id}")]
     public IActionResult Put(int id, FoodItem fooditem)
     {
-        var oldFoodItem = PantryItems.Find(p => p.Id == id);
+        var oldFoodItem = _context.FoodItems.Find(id);
         if (oldFoodItem == null) return NotFound();
 
         oldFoodItem.FoodItemName = fooditem.FoodItemName;
         oldFoodItem.Quantity = fooditem.Quantity;
+        _context.SaveChanges();
         return NoContent();
     }
 
     [HttpPatch("{id}/reduce")]
     public IActionResult ReduceQuantity(int id, [FromQuery] int amount)
     {
-        var item = PantryItems.FirstOrDefault(i => i.Id == id);
+        var item = _context.FoodItems.Find(id);
         if (item == null) return NotFound();
 
         if (item.Quantity < amount)
@@ -52,16 +54,17 @@ public class FoodItemsController : ControllerBase
         }
 
         item.Quantity -= amount;
+        _context.SaveChanges();
         return Ok(new { Message = "Määrä muutettu" });
     }
 
     [HttpDelete("{id}")]
-    public IActionResult Delete(int id)
+    public IActionResult RemoveItem(int id)
     {
-        var foodItem = PantryItems.Find(p => p.Id == id);
-        if (foodItem == null) return NotFound();
-
-        PantryItems.Remove(foodItem);
+        var item = _context.FoodItems.Find(id);
+        if (item == null) return NotFound();
+        _context.FoodItems.Remove(item);
+        _context.SaveChanges();
         return NoContent();
     }
 }

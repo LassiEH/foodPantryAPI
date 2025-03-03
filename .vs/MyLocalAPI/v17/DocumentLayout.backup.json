@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\cs12dotnet8\\experiments\\MyLocalAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|c:\\cs12dotnet8\\experiments\\mylocalapi\\controllers\\fooditemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|solutionrelative:controllers\\fooditemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|c:\\cs12dotnet8\\experiments\\mylocalapi\\models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|solutionrelative:models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|c:\\cs12dotnet8\\experiments\\mylocalapi\\controllers\\fooditemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|solutionrelative:controllers\\fooditemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1ED2C91-64E7-47AC-8ABE-AEF3443B55E8}|MyLocalAPI.csproj|c:\\cs12dotnet8\\experiments\\mylocalapi\\mylocalapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -26,24 +26,23 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 266,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FoodItemController.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\experiments\\MyLocalAPI\\Controllers\\FoodItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\FoodItemController.cs",
               "ToolTip": "C:\\cs12dotnet8\\experiments\\MyLocalAPI\\Controllers\\FoodItemController.cs",
               "RelativeToolTip": "Controllers\\FoodItemController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T18:13:40.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:13:40.423Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "MyLocalAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-26T18:11:46.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:11:46.222Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "MyLocalAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-26T18:11:02.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:11:02.154Z"
             },
             {
               "$type": "Document",
@@ -81,18 +78,17 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T18:10:48.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T18:10:48.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FoodItem.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\experiments\\MyLocalAPI\\Models\\FoodItem.cs",
               "RelativeDocumentMoniker": "Models\\FoodItem.cs",
               "ToolTip": "C:\\cs12dotnet8\\experiments\\MyLocalAPI\\Models\\FoodItem.cs",
               "RelativeToolTip": "Models\\FoodItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T18:10:37.16Z",
               "EditorCaption": ""
